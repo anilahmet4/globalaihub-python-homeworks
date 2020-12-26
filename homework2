@@ -23,20 +23,20 @@ for k in range(999):
   while True:
     age = (input('\n''Age: '))
     if len(age) == 0 :
-      print("This part can not be empty!"'\n')
-    elif int(age) > 122 or int(age) < 0:
-      print("This is not possible.")
+      print("This part can not be empty!")
+    elif int(age) < 122 or int(age) > 0:
+      continue
     else:
-      break
-
+      print("This is not possible.")
+    
   while True:
     birthday = input('\n''Birth Date(Just year): ') 
     if len(birthday)== 0 :
       print("This part can not be empty!")
     elif len(birthday) != 4 :
-      print('\n'"Please enter a reasonable date. ")
+      print("Please enter a reasonable date. ")
     elif  int(birthday) < 1900 or int(birthday) > 2021:
-      print('\n'"Please enter a reasonable date. ")
+      print("Please enter a reasonable date. ")
     elif 2020-int(birthday) == int(age) or 2020 - int(birthday) ==  int(age)-1 or 2020 - int(birthday) == int(age)+1 :
       break
     else:
@@ -62,4 +62,3 @@ for k in range(999):
   for i in range(k+1): 
     a = '%s %s %s %s' % (ad[i],soyad[i],yaş[i],yıl[i])
     print("User",i+1,":",a)
-  
