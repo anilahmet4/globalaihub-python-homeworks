@@ -84,3 +84,5 @@ for k in range(999):
   for i in range(k+1): 
     a = '%s %s %s %s %s %s' % (ad[i],soyad[i],'-',yaş[i],'-',yıl[i])
     print("User",i+1,":",a)
+  
+  
